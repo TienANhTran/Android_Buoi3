@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guildline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"/>
+
+        <EditText
+            android:id="@+id/nhapsoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhap so a"
+            android:textSize="20dp"
+            android:background="@drawable/botron_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guildline"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" />
+        <EditText
+            android:id="@+id/nhapsob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhap mat khau"
+            android:textSize="20dp"
+            android:background="@drawable/botron_edittext"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nhapsoa"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" />
+        <EditText
+            android:id="@+id/ketqua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ket qua"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:background="@drawable/botron_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nhapsob"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4" >
+        <Button
+            android:id="@+id/cong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@drawable/botron_edittext"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <Button
+            android:id="@+id/tru"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@drawable/botron_edittext"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+             />
+        <Button
+            android:id="@+id/nhan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@drawable/botron_edittext"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+             />
+        <Button
+            android:id="@+id/chia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:background="@drawable/botron_edittext"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
